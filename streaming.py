@@ -33,9 +33,9 @@ class StdOutListener(StreamListener):
 	def on_status(self, status):
 		# u = status.user.screen_name.encode("utf-8")
 		t = status.text.replace("\n"," ").encode("utf-8")
-		spc = " ... "
+		spc = "\n\n"
 		# print "    %s%s%s " % ("\033[7m", "tw", "\033[0m"),
-		sys.stdout.write("")
+		sys.stdout.write("  ")
 		for c in t:
 			print c,
 			sys.stdout.write("")

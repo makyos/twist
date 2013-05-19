@@ -27,8 +27,8 @@ class StdOutListener(StreamListener):
 	# 	print data
 	# 	return True
 
-	# def on_error(self, status):
-	# 	print status
+	def on_error(self, status):
+		print status
 
 	def on_status(self, status):
 		# u = status.user.screen_name.encode("utf-8")

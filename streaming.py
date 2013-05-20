@@ -44,6 +44,7 @@ class StdOutListener(StreamListener):
 		sys.stdout.write("")
 
 if __name__ == '__main__':
+	print sys.argv[5]
 	sys.stdout = os.fdopen(sys.stdout.fileno(), 'w', 0)
 
 	l = StdOutListener()
